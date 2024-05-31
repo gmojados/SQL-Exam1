@@ -27,4 +27,10 @@
     -> from movies;
 
     
-9.)
+9.) > SELECT Rating, 
+    ->        AVG(IMDB_Score) AS Average_IMDB_Score, 
+    ->        MAX(IMDB_Score) AS Maximum_IMDB_Score, 
+    ->        MIN(IMDB_Score) AS Minimum_IMDB_Score
+    -> FROM movies
+    -> GROUP BY Rating
+    -> HAVING COUNT(*) > 1;
