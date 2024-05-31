@@ -27,10 +27,10 @@
     -> from movies;
 
     
-9.) > SELECT Rating, 
-    ->        AVG(IMDB_Score) AS Average_IMDB_Score, 
-    ->        MAX(IMDB_Score) AS Maximum_IMDB_Score, 
-    ->        MIN(IMDB_Score) AS Minimum_IMDB_Score
+9.) mysql> SELECT Rating, 
+    ->        AVG(IMDB_Score) AS AVG_IMDB_Score, 
+    ->        MAX(IMDB_Score) AS MAX_IMDB_Score, 
+    ->        MIN(IMDB_Score) AS MIN_IMDB_Score
     -> FROM movies
     -> GROUP BY Rating
     -> HAVING COUNT(*) > 1;
